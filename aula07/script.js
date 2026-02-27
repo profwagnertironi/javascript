@@ -1,32 +1,22 @@
-let btn_soma = document.querySelector("#btn-soma")
-let campo = document.querySelector("#inp-number")
-let mensagem = document.querySelector("#mensagem")
+function msg_semretorno() {
+    console.log('Função sem retorno')
+}
 
-let numeros = []
+function msg_comretorno() {
+    return 'Função COM retorno'
+}
 
-btn_soma.addEventListener("click", () =>{
-   //addEventListener("click", () =>{
-   console.log('soma')
-})
+function msg_comparametro(txt1, txt2) {
+    let nova_mensagem = txt1 + txt2
+    return nova_mensagem
+}
 
-campo.addEventListener('input', (e) =>{
-   let numero = e.target.value 
-   //document.getElementById("inp-number")
-   console.log('numero ' + numero)
-   numeros[numeros.length] = numero
-})
+console.log('Inicio')
 
+msg_semretorno()
 
-campo.addEventListener('keydown', (e) =>{
-   //let numero = e.target.value 
-   //document.getElementById("inp-number")
-   //console.log('numero ' + numero)
-   if (e.key === 'Enter') {
-      console.log('Enter ' + numeros[numeros.length-1])
-      campo.value = ''
-   }
-})
-//mensagem.innerHTML = "<p>"+numeros+"</p>"
-console.log(numeros)
+let msg = msg_comretorno()
+console.log(msg)
 
-
+let msg2 = msg_comparametro('A mensagem de início', ' e o fim!')
+console.log(msg2)
