@@ -1,24 +1,24 @@
-let soma = 0
-let numero = 1
-const limite = 10
+let soma = 0;
+let numero = 1;
+const limite = 10;
 
-console.log('inicio Soma = ' + soma + ' e numero = '+ numero)
+console.log('inicio Soma = ' + soma + ' e numero = '+ numero);
 
 while (soma<=limite){
-    soma += numero
-    numero++
-    console.log(' while Soma = ' + soma + ' e numero = '+ numero)
+    soma += numero;
+    numero++;
+    console.log(' while Soma = ' + soma + ' e numero = '+ numero);
 }
-console.log('O resultado no while é: ' + soma)
+console.log('O resultado no while é: ' + soma);
 
 
 do{
-    soma += numero
-    numero++
-    console.log(' do-while Soma = ' + soma + ' e numero = '+ numero)
+    soma += numero;
+    numero++;
+    console.log(' do-while Soma = ' + soma + ' e numero = '+ numero);
 }while (soma<=limite)
 
-console.log('O resultado do-while é: ' + soma)
+console.log('O resultado do-while é: ' + soma);
 
 
 /*let pessoa = {nome:'fulano', idade:30, cidade: 'Contagem'}

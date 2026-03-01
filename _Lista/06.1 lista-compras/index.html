@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerenciador de Lista de Compras</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h1>🛒 Lista de Compras</h1>
+            
+            <div class="secao-entrada">
+                <div class="form-group">
+                    <label for="item-nome">Nome do Item:</label>
+                    <input type="text" id="item-nome" placeholder="Ex: Pão, Leite, Frutas...">
+                </div>
+
+                <div class="form-group">
+                    <label for="item-quantidade">Quantidade:</label>
+                    <input type="number" id="item-quantidade" placeholder="1" min="1" value="1">
+                </div>
+
+                <button type="button" id="btn-adicionar">Adicionar à Lista</button>
+            </div>
+
+            <div class="secao-pesquisa">
+                <div class="form-group">
+                    <label for="pesquisa">Pesquisar:</label>
+                    <input type="text" id="pesquisa" placeholder="Pesquise por nome ou posição...">
+                </div>
+                <button type="button" id="btn-pesquisar">Pesquisar</button>
+                <button type="button" id="btn-limpar-pesquisa">Limpar Busca</button>
+            </div>
+
+            <div id="resultado-pesquisa" class="resultado-pesquisa"></div>
+
+            <div id="lista-itens" class="lista-itens"></div>
+
+            <div id="lista-vazia" class="lista-vazia">
+                <p>Nenhum item na lista. Adicione um item para começar!</p>
+            </div>
+        </main>
+    </body>
+</html>

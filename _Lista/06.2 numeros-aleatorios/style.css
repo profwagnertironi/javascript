@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h2 {
+    color: #667eea;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    width: 100%;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+button {
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+.secao {
+    width: 100%;
+    background: #f8f9fa;
+    border-left: 5px solid #667eea;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.secao.ativo {
+    display: block;
+}
+
+.numeros-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.numero {
+    background: #667eea;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    min-width: 50px;
+    text-align: center;
+}
+
+.numero-par {
+    background: #28a745;
+}
+
+.numero-impar {
+    background: #ffc107;
+    color: #333;
+}
+
+.numero-primo {
+    background: #dc3545;
+}
+
+.lista-grupo {
+    margin: 15px 0;
+}
+
+.lista-grupo p {
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.lista-grupo .descricao {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}

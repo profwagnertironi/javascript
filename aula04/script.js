@@ -1,4 +1,4 @@
-let dia_da_semana = 2
+let dia_da_semana = 2;
 
 switch (dia_da_semana) {
     case 1:
